@@ -26,7 +26,7 @@ def main(page: ft.Page) -> None:
                 route="/",
                 controls=[
                     AppBar(title=Text("Home"), bgcolor=ft.colors.TRANSPARENT),
-                    Text("Home", size=30),
+                    Text("Home", size=15),
                     ElevatedButton(text="Chemistry", on_click=lambda _: page.go("/chemistry")),
                     ElevatedButton(text="Mathematics", on_click=lambda _: page.go("/mathematics")),
                     ElevatedButton(text="Physics", on_click=lambda _: page.go("/physics")),
@@ -37,9 +37,9 @@ def main(page: ft.Page) -> None:
                 bgcolor=ft.colors.TRANSPARENT,
                 decoration=ft.BoxDecoration(
                     image=ft.DecorationImage(
-                        src="Science-Subjects.png",
+                        src="Main-screen.png",
                         fit=ft.ImageFit.COVER,
-                        opacity=0.4,
+                        opacity=0.5,
                     )
                 )
             )
